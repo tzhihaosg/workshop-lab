@@ -1,2 +1,2 @@
 - name: "Task 1: Gather facts"
-  import tasks: gather-facts.yml
+  import_tasks: gather-facts.yml
