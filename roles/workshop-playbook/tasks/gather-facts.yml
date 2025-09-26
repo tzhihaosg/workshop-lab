@@ -1,0 +1,12 @@
+---
+- name: Collect IOS Facts
+  cisco.ios.ios_facts:
+    gather_subset: all
+
+- name: Display Hostname, Model and Version
+  debug:
+    msg:
+      - "Hostname: {{ ansible_net_hostname }}"
+      - "Device Model: {{ ansible_net_model }}"
+      - "Device Serial: {{ ansible_net_serialnum }}"
+      - "OS Version: {{ ansible_net_version }}"
