@@ -1,2 +1,4 @@
-- name: "Task 1: Gather facts"
-  import_tasks: gather-facts.yml
+## - name: "Task 1: Gather facts"
+##  import_tasks: gather-facts.yml
+- name: "Task 2: Login Banner"
+  import_tasks: login-banner.yml
